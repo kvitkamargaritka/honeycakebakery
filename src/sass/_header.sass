@@ -1,16 +1,50 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  padding-top: 10px
+  width: 100%
+  background-color: $bgBlue
+  z-index: 25
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+
 .nav
-  text-align: center
-  background-color: #9AE2D8
+  padding: 0 50px
+
+  &__list
+    display: flex
 
   &__el
-    display: inline-block
-    padding: 15px 30px
-    cursor: pointer
+    margin: 0 30px
+
+  &__link
+    display: block
+    padding: 10px 15px
+    font-size: 27px
+    transition: all 300ms ease-in
+    border-radius: 50px
+    white-space: nowrap
     &:hover
       color: #fff
+      background-color: $textBlue
 
-  &__text
-    font-size: 15px
-    text-transform: uppercase
-    transition: all .7s ease
+.topwaves
+  position: fixed
+  top: 140px
+  left: 0
+  width: 100%
+  height: 15px
+  background-image: url("../img/topwaves.png")
+  background-repeat: repeat-x
+  background-size: 44px
+  margin-top: 0
+  z-index: 25
+
+
+
 
