@@ -38,7 +38,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Кто мы</a>
+		              <a href="#who" class="nav__link">Кто мы</a>
 
 		            </li>
 
@@ -46,7 +46,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Цены</a>
+		              <a href="#services"  class="nav__link">Услуги</a>
 
 		            </li>
 
@@ -54,7 +54,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Сладости</a>
+		              <a href="#sweets"  class="nav__link">Сладости</a>
 
 		            </li>
 
@@ -102,7 +102,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Отзывы</a>
+		              <a href="#price"  class="nav__link">Цены</a>
 
 		            </li>
 
@@ -110,7 +110,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Следить</a>
+		              <a href="#follow"  class="nav__link">Следить</a>
 
 		            </li>
 
@@ -118,7 +118,7 @@
 
 		            <li class="nav__el">
 
-		              <a class="nav__link">Контакты</a>
+		              <a href="#contacts"  class="nav__link">Контакты</a>
 
 		            </li>
 
@@ -155,63 +155,48 @@
 		
 
 		<main>
-				<div class="swiper">
-				  <div class="swiper-container">
-				
-				    <div class="swiper-wrapper">
-				
-				      <div class="swiper-slide">
-				        <div class="slide slide_1">
-				          <img class="swiper__img" src="img/cake1.jpg" alt="cake"/>
-				        </div>
-				      </div>
-				
-				      <div class="swiper-slide">
-				        <div class="slide slide_2">
-				          <img class="swiper__img" src="img/cake2.jpg" alt="cake"/>
-				        </div>
-				      </div>
-				
-				      <div class="swiper-slide">
-				        <div class="slide slide_3">
-				          <img class="swiper__img" src="img/cake3.jpg" alt="cake"/>
-				        </div>
-				      </div>
-				
-				    </div>
-				
-				    <div class="swiper-button-next"></div>
-				    <div class="swiper-button-prev"></div>
-				
-				    <!--<div class="swiper-pagination"></div>-->
-				  </div>
-				  <div class="bottomwaves"></div>
+				<div class="bottomwaves"></div>
+				<div class="bg-video">
+				  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=prZXGT1mObA',containment:'.bg-video',autoPlay:true, mute:true, startAt:61, stopAt:110, opacity:1}"></a>
 				</div>
 				
 				
-				
-				<div class="section section-1">
+				<div class="section section-1" id="who">
 				
 				  <div class="container">
 				
-				    <div class="section-1__top">
+				    <div class="section__top">
 				      <h1>Кто мы ?</h1>
 				    </div>
-				    <div class="section-1__bottom"></div>
+				    <div class="section__bottom">
 				
-				  </div>
+				      <div class="text">
 				
-				</div>
+				        Honey Cake Bakery  - домашняя семейная кондитерская основана в 2015 году.
+				        Основной нашей целью является сделать твою и жизнь твоих близких слаще.
+				        Мы испытываем истинное счастье видя в глазах клиентов радость и удовольствие подаренное нашими вкусными десертами.
+				        Для приготовления тортов и десертов мы используем только натуральные и свежие продукты, так как нам важно изготавливать не только красивый и вкусный продукт, но и качественный.
+				        На сегодняшний день у нас представлен определенный ассортимент, который постоянно расширяется.
+				        <br/>
+				        Если у тебя есть идеи как сделать твой торт вкусным и красивым - мы будем счастливы воплотить твои идеи в реальность!
 				
-				<div class="section section-2">
+				      </div>
+				
+				    </div><!-- end section__bottom -->
+				
+				  </div><!-- container -->
+				
+				</div><!-- end section-1 -->
+				
+				<div class="section section-2" id="services">
 				
 				  <div class="container">
 				
-				    <div class="section-2__top">
+				    <div class="section__top">
 				      <h1>Услуги</h1>
 				    </div>
 				
-				    <div class="section-2__bottom">
+				    <div class="section__bottom">
 				
 				      <div class="services">
 				
@@ -229,8 +214,9 @@
 				                <h3 class="item__title">
 				                  Дизайн сладостей
 				                </h3>
-				                <p class="item__descr">Lorem ipsum dolor sit amet, consectetur
-				                  adipisicing elit. Laboriosam, nulla.
+				                <p class="item__descr">
+				                  Мы за креативный подход к своему делу и все идеи и пожелания
+				                  по дизайну сладостей мы готовы воплотить в реальность
 				                </p>
 				              </div>
 				
@@ -250,7 +236,8 @@
 				                <h3 class="item__title">
 				                  Лучшие кексы в мире!
 				                </h3>
-				                <p class="item__descr">Lorem ipsum dolor sit amet, consectetur
+				                <p class="item__descr">
+				                  Lorem ipsum dolor sit amet, consectetur
 				                  adipisicing elit. Laboriosam, nulla.
 				                </p>
 				              </div>
@@ -269,10 +256,10 @@
 				
 				              <div class="item__right">
 				                <h3 class="item__title">
-				                  blabla
+				                  Круассаны
 				                </h3>
-				                <p class="item__descr">Lorem ipsum dolor sit amet, consectetur
-				                  adipisicing elit. Laboriosam, nulla.
+				                <p class="item__descr">
+				                  Вы таких еще тчоно не пробовали, а попробовав - не забудете!
 				                </p>
 				              </div>
 				
@@ -288,15 +275,220 @@
 				
 				  </div><!-- end container -->
 				
-				</div><!-- end section -->
-				<div class="section section-3">
+				</div><!-- end section-2 -->
+				<section class="section section-3" id="sweets">
 				
 				  <div class="container">
 				
-				    <div class="section-3__top">
+				    <div class="section__top">
+				      <h1>Сладости</h1>
+				    </div>
+				
+				    <div class="section__bottom">
+				
+				      <div class="items">
+				
+				        <ul class="items__list">
+				          <li class="items__el">
+				            <div class="item item_1">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_2">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_3">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_4">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_1">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_2">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_3">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_4">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_1">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_2">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_3">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				          <li class="items__el">
+				            <div class="item item_4">
+				
+				              <div class="item__top"></div>
+				              <div class="item__bottom">
+				                <h3>Lorem ipsum dolor.</h3>
+				                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, fugiat?</span>
+				              </div>
+				
+				            </div>
+				          </li>
+				
+				        </ul>
+				
+				      </div><!-- end items -->
+				
+				    </div><!-- end section__bottom -->
+				
+				  </div><!-- end container -->
+				
+				</section><!-- end section-3 -->
+				<div class="section section-4" id="price">
+				
+				  <div class="container">
+				
+				    <div class="section__top">
+				      <h1>Наши цены</h1>
+				    </div>
+				
+				    <div class="section__bottom">
+				
+				      <div class="items">
+				
+				        <ul class="items__list">
+				
+				          <li class="items__el">
+				
+				            <div class="price">
+				              <div class="price__top"></div>
+				              <div class="price__center">
+				                <h3>от 250грн/кг</h3>
+				              </div>
+				              <div class="price__bottom">
+				                <p>Минимальный заказ от 1,5кг</p>
+				                <p>бла бла бла</p>
+				                <p>С мастикой не работаем</p>
+				              </div>
+				            </div><!-- end price -->
+				
+				          </li>
+				
+				        </ul>
+				
+				      </div><!-- end items -->
+				
+				    </div><!-- end section__bottom -->
+				
+				  </div><!-- end container -->
+				
+				</div><!-- end section-4 -->
+				<div class="section section-5" id="follow">
+				
+				  <div class="container">
+				
+				    <div class="section__top">
 				      <h1 class="section__title">Мы в соц сетях</h1>
 				    </div>
-				    <div class="section-3__bottom">
+				    <div class="section__bottom">
 				      
 				      <div class="follow">
 				        
@@ -312,7 +504,7 @@
 				
 				          <li class="follow__el">
 				
-				            <a href="https://vk.com/honeycakebakery/" class="follow__link">
+				            <a href="https://vk.com/honeycakebakery" class="follow__link">
 				              <img class="follow__img" src="img/vk.svg" alt="vkontakte"/>
 				            </a>
 				
@@ -328,7 +520,7 @@
 				
 				          <li class="follow__el">
 				
-				            <a href="https://vk.com/honeycakebakery/" class="follow__link">
+				            <a href="mailto:HoneyCakeBakery2015@gmail.com" class="follow__link">
 				              <img class="follow__img" src="img/mail.svg" alt="mail"/>
 				            </a>
 				
@@ -336,61 +528,44 @@
 				          
 				        </ul>
 				        
-				      </div>
+				      </div><!-- end follow -->
 				      
-				    </div>
+				    </div><!-- end section__bottom -->
 				
-				  </div>
+				  </div><!-- end container -->
 				
-				</div>
+				</div><!-- end section-5 -->
 				
-				<div class="section section-4">
-				
-				  <div class="container">
-				
-				    <div class="section-4__top">
-				      <h1>Наши цены</h1>
-				    </div>
-				    <div class="section-4__bottom"></div>
-				
-				  </div>
-				
-				</div>
-				<div class="section section-5">
+				<div class="section section-6" id="contacts">
 				
 				  <div class="container">
 				
-				    <div class="section-5__top">
+				    <div class="section__top">
 				      <h1>Контакты</h1>
 				    </div>
-				    <div class="section-5__bottom">
+				    <div class="section__bottom">
 				
 				      <div class="contacts">
 				
 				        <div class="contacts__wrap">
 				
-				          <h3 class="contacts__title">HoneyCakeBakery</h3>
-				
 				          <ul class="contacts__list">
 				
 				            <li class="contacts__el">
 				              <span class="contacts__text">
-				                <i class="ico ico_phone"></i>
+				                Украина, Киев
+				              </span>
+				            </li>
+				
+				            <li class="contacts__el">
+				              <span class="contacts__text">
 				                +38 (093) 230 25 08
 				              </span>
 				            </li>
 				
 				            <li class="contacts__el">
 				              <span class="contacts__text">
-				                <i class="ico ico_mail"></i>
 				                HoneyCakeBakery2015@gmail.com
-				              </span>
-				            </li>
-				
-				            <li class="contacts__el">
-				              <span class="contacts__text">
-				                <i class="ico ico_home"></i>
-				                Украина, Киев
 				              </span>
 				            </li>
 				
@@ -404,7 +579,7 @@
 				
 				  </div><!-- end container -->
 				
-				</div><!-- end section -->
+				</div><!-- end section-6 -->
 		</main>
 		<!-- END main-->
 
