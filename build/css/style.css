@@ -138,7 +138,7 @@ img { max-width: 100%; }
 .logo img { width: 100%; -webkit-transition: all 2s; transition: all 2s; }
 .logo img:hover { -webkit-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
 
-.section { padding: 30px 0; background-color: #A4E2D5; font-size: 50px; }
+.section { width: 100%; padding: 30px 0; background-color: #A4E2D5; font-size: 50px; }
 
 .section-1, .section-3, .section-5 { background-color: #fff; }
 
@@ -244,10 +244,12 @@ img { max-width: 100%; }
  .nav{ padding: 0; }
  .nav__el{ margin: 0 15px; } }
 
+@media only screen and (max-width: 1024px){
+ .bg-pic{ display: block; } }
+
 @media only screen and (max-width: 960px){
  .bottomwaves{ top: 526px; }
- .bg-video{ display: none; }
- .bg-pic{ display: block; } }
+ .bg-video{ display: none; } }
 
 
 
