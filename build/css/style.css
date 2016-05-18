@@ -245,6 +245,7 @@ img { max-width: 100%; }
  .nav__el{ margin: 0 15px; } }
 
 @media only screen and (max-width: 1024px){
+ .container{ width: 840px; }
  .bg-pic{ display: block; } }
 
 @media only screen and (max-width: 960px){
