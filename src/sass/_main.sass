@@ -12,6 +12,7 @@ body
   font-size: 12px
   color: $textBlue
   font-family: 'Karton'
+  letter-spacing: 1.1px
 
 a
   text-decoration: none
@@ -41,13 +42,14 @@ img
     background: url("../img/ico-mail.png")
 
 .container
-  max-width: 1200px
+  width: 1160px
   margin: 0 auto
-  padding: 0 10px
   +r(1200)
-    max-width: 960px
-  +r(1160)
-    max-width: 940px
+    width: 960px
+  +r(980)
+    width: auto
+    padding: 0 30px
+
 
 .logo
   width: 120px
@@ -61,27 +63,32 @@ img
 
 .section
   width: 100%
-  padding: 30px 0
   background-color: $bgBlue
-  font-size: 50px
 
 .section-1, .section-3, .section-5
   background-color: #fff
 
 .section
-  h1
+
+  &__title
+    padding: 20px 0
+    margin-bottom: 30px
     text-align: center
     font-size: 40px
     font-weight: 600
+    +r(768)
+      font-size: 30px
+
 
 .section-1
   font-size: 25px
   text-align: left
+  +r(768)
+    font-size: 20px
+
   h1
-    padding: 20px 0
     background: url("../img/team.png") no-repeat 50% 100%
     background-size: 500px
-    margin-bottom: 30px
 
   .text
     column-gap: 45px
@@ -92,91 +99,35 @@ img
     +r(768)
       column-count: 1
       text-align: center
+
 .section-2
   h1
-    padding: 20px 0
     background: url("../img/services-line.png") no-repeat 50% 100%
     background-size: 500px
-    margin-bottom: 30px
 
 .section-5
   h1
-    padding: 20px 0
     color: $textBlue
     background: url("../img/oursocial.png") no-repeat 50% 100%
     background-size: 500px
-    margin-bottom: 30px
 
 .section-4
   h1
-    padding: 20px 0
     color: $textBlue
     background: url("../img/prices-line.png") no-repeat 50% 100%
     background-size: 500px
-    margin-bottom: 30px
 
-.section-5
-  h3
-    color: #7d7d7d
-    font-size: 30px
+.section-6
+  h1
+    color: $textBlue
+    background: url("../img/lollipop.png") no-repeat 50% 100%
+    background-size: 500px
 
 .section-3
   h1
-    padding: 20px 0
     color: $textBlue
     background: url("../img/heart-line.png") no-repeat 50% 100%
     background-size: 500px
-    margin-bottom: 30px
-
-.section-2
-
-  .services
-
-    &__list
-      display: flex
-      flex-direction: row
-      justify-content: space-around
-      +r(1199)
-        flex-wrap: wrap
-
-    &__el
-      width: 32%
-      +r(1199)
-        width: 50%
-      +r(980)
-        width: 100%
-
-  .item
-    display: flex
-    justify-content: space-between
-    width: 100%
-    cursor: default
-
-    &:hover
-      .item__img
-        transform: rotate(360deg)
-
-    &__left
-      width: 30%
-      margin: 40px 15px 0 0
-
-
-    &__right
-      width: 70%
-      margin: 0 10px
-
-    &__title
-      color: #7d7d7d
-      font-size: 30px
-
-    &__descr
-      font-size: 20px
-      color: #a9a9a9
-
-    &__img
-      width: 100px
-      height: 100px
-      transition: transform .5s ease
 
 .follow
 
@@ -213,7 +164,7 @@ img
   background-size: 44px
   margin-top: 0
   z-index: 20
-  +r(960)
+  +r(1024)
     top: 526px
   
 .contacts
@@ -223,10 +174,16 @@ img
   padding: 75px 45px
   text-align: center
   background: url("../img/bigmarker.png") no-repeat center
+  +r(768)
+    background-size: 250px
+    height: 320px
+    padding: 1px 0
 
   &__list
     text-align: center
     margin-top: 10px
+    +r(768)
+      margin-top: 65px
 
   &__el
     margin-bottom: 10px
@@ -236,6 +193,8 @@ img
     display: block
     font-size: 24px
     color: #a9a9a9
+    +r(768)
+      font-size: 17px
 
 
 

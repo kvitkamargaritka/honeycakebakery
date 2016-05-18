@@ -1,0 +1,50 @@
+.section-2
+
+  .services
+
+    &__list
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      +r(1200)
+        flex-wrap: wrap
+
+    &__el
+      width: 330px
+      +r(1200)
+        width: 100%
+
+  .item
+    display: flex
+    justify-content: space-between
+    width: 100%
+    cursor: default
+
+    &:hover
+      .item__img
+        transform: rotate(360deg)
+
+    &__left
+      width: 30%
+      margin: 40px 15px 0 0
+      +r(1200)
+        width: 15%
+
+    &__right
+      width: 70%
+      margin: 0 10px
+      +r(1200)
+        width: 85%
+
+    &__title
+      color: #7d7d7d
+      font-size: 30px
+
+    &__descr
+      font-size: 20px
+      color: #a9a9a9
+
+    &__img
+      width: 100px
+      height: 100px
+      transition: transform .5s ease
