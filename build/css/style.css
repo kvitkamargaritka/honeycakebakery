@@ -179,24 +179,40 @@ img { max-width: 100%; }
 .contacts__el { margin-bottom: 10px; padding: 0; }
 .contacts__text { display: block; font-size: 24px; color: #a9a9a9; }
 
-.section-4 .items__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; width: 22%; }
-.section-4 .price { text-align: center; border: 5px solid #fff; border-bottom: none; }
-.section-4 .price__top { background: url("../img/bg-price.png") repeat; width: 100%; height: 100px; }
-.section-4 .price__center { background: url("../img/bgribbon.jpg") repeat; width: 100%; height: 50px; z-index: 2; }
-.section-4 .price__bottom { background: url("../img/bg-price.png") repeat; width: 100%; height: 200px; }
+.section-4 .items { margin-top: 150px; margin-bottom: 100px; }
+.section-4 .items__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+.section-4 .items__el { width: 22%; }
+.section-4 .price { text-align: center; border-bottom: none; }
+.section-4 .price:hover .price__img { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); }
+.section-4 .price__top { background: #fff; width: 100%; height: 100px; border: 5px solid #4DAEB5; -webkit-border-radius: 30px 30px 0 0; border-radius: 30px 30px 0 0; border-bottom: none; }
+.section-4 .price__img { display: inline-block; position: relative; top: -64px; width: 60%; -webkit-filter: grayscale(30%); -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.section-4 .price__center { background: url("../img/bgribbon.jpg") repeat; width: 100%; height: 50px; color: #fff; }
+.section-4 .price__bottom { padding-top: 15px; background: #fff; width: 100%; height: 200px; border: 5px solid #4DAEB5; -webkit-border-radius: 0 0 30px 30px; border-radius: 0 0 30px 30px; border-top: none; }
 .section-4 .price h3 { font-size: 25px; }
-.section-4 .price p { font-size: 22px; }
+.section-4 .item__el { font-size: 22px; }
 
 .section-3 .items__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .section-3 .items__el { width: 22%; margin-bottom: 35px; }
 .section-3 .item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; text-align: center; font-size: 15px; }
 .section-3 .item__top { width: 100%; height: 250px; margin-bottom: 10px; -webkit-border-radius: 10%; border-radius: 10%; -webkit-filter: brightness(70%); opacity: 0.8; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; cursor: pointer; }
 .section-3 .item__top:hover { opacity: 1; -webkit-filter: brightness(100%); -webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); z-index: 5; }
-.section-3 .item__bottom h3 { font-size: 18px; }
+.section-3 .item__bottom h3 { font-size: 20px; }
 .section-3 .item_1 .item__top { background: url("../img/cake1.jpg") no-repeat center left; background-size: cover; }
 .section-3 .item_2 .item__top { background: url("../img/cake2.jpg") no-repeat center left; background-size: cover; }
 .section-3 .item_3 .item__top { background: url("../img/cake3.jpg") no-repeat center left; background-size: cover; }
 .section-3 .item_4 .item__top { background: url("../img/cake4.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_5 .item__top { background: url("../img/cake5.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_6 .item__top { background: url("../img/cake6.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_7 .item__top { background: url("../img/cake7.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_8 .item__top { background: url("../img/cake8.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_9 .item__top { background: url("../img/cake9.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_10 .item__top { background: url("../img/cake10.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_11 .item__top { background: url("../img/cake11.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_12 .item__top { background: url("../img/cake12.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_13 .item__top { background: url("../img/cake13.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_14 .item__top { background: url("../img/cake14.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_15 .item__top { background: url("../img/cake15.jpg") no-repeat center left; background-size: cover; }
+.section-3 .item_16 .item__top { background: url("../img/cake16.jpg") no-repeat center left; background-size: cover; }
 
 .header { position: fixed; top: 0; left: 0; padding-top: 10px; width: 100%; background-color: #A4E2D5; z-index: 25; }
 .header__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
