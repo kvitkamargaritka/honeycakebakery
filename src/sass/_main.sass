@@ -43,6 +43,9 @@ img
 .container
   width: 1200px
   margin: 0 auto
+  padding: 0 10px
+  +r(1200)
+    width: 960px
 
 .logo
   width: 120px
@@ -81,6 +84,8 @@ img
     column-gap: 45px
     column-count: 3
     margin-bottom: 30px
+    +r(1200)
+      column-count: 2
 
 .section-2
   h1
@@ -168,13 +173,16 @@ img
     display: flex
     flex-direction: row
     justify-content: space-around
+    margin-bottom: 50px
 
-  &__el
+  &__link
+    display: block
     &:hover
       .follow__img
         transform: rotate(360deg)
 
   &__img
+    display: block
     width: 140px
     height: 140px
     transition: transform .5s ease
@@ -190,6 +198,8 @@ img
   background-size: 44px
   margin-top: 0
   z-index: 20
+  +r(960)
+    top: 526px
   
 .contacts
   width: 380px
@@ -198,8 +208,6 @@ img
   padding: 75px 45px
   text-align: center
   background: url("../img/bigmarker.png") no-repeat center
-
-  &__wrap
 
   &__list
     text-align: center
@@ -270,10 +278,9 @@ img
 
   .item
 
-    &__list
-
     &__el
-      font-size: 22px
+      font-size: 18px
+    letter-spacing: 1.1px
 
 .section-3
 
@@ -313,6 +320,9 @@ img
     &__bottom
       h3
         font-size: 20px
+
+      span
+        letter-spacing: 1.1px
 
     &_1
       .item__top
