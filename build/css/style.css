@@ -245,7 +245,6 @@ img { max-width: 100%; }
  .nav{ padding: 0; }
  .nav__el{ margin: 0 15px; }
  .section-4 .items__list{ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
- .section-4 .items__el{ min-width: 305px; margin: 0 20px 77px 20px; }
  .section-4 .price__img{ width: 50%; } }
 @media only screen and (max-width: 1024px){
  body{ padding-top: 98px; }
@@ -259,7 +258,8 @@ img { max-width: 100%; }
  .section-2 .item__left{ width: 14%; }
  .section-2 .item__right{ width: 86%; margin: 0 30px; }
  .section-2 .item__descr{ line-height: 1.6; }
- .section-4 .items{ margin-top: 100px; margin-bottom: 0; } }
+ .section-4 .items{ margin-top: 100px; margin-bottom: 0; }
+ .section-4 .items__el{ min-width: 330px; margin: 0 20px 77px 20px; } }
 @media only screen and (max-width: 980px){
  .container{ width: auto; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
@@ -268,7 +268,8 @@ img { max-width: 100%; }
  .contacts{ background-size: 250px; height: 320px; padding: 1px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; }
- .section-3 .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
+ .section-3 .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+ .section-4 .items__el{ min-width: 300px; } }
 @media only screen and (max-width: 767px){
  .section-1{ font-size: 16px; }
  .follow__img{ width: 70px; height: 70px; }
