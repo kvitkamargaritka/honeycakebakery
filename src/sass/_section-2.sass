@@ -15,6 +15,8 @@
     justify-content: space-between
     width: 100%
     cursor: default
+    +r(767)
+      line-height: 2
 
     &:hover
       .item__img
@@ -23,26 +25,36 @@
     &__left
       margin: 30px 0 0 0
       width: 10%
+      +r(1024)
+        width: 14%
       +r(767)
-        width: 15%
+        width: 22%
 
     &__right
       margin: 0 10px
       width: 90%
+      +r(1024)
+        width: 86%
+        margin: 0 30px
       +r(767)
-        width: 85%
+        width: 78%
 
     &__title
       color: #fff
       font-size: 30px
-      +r(767)
-        font-size: 26px
 
     &__descr
       font-size: 20px
       color: $textBlue
+      +r(1024)
+        line-height: 1.6
+      +r(767)
+        font-size: 15px
 
     &__img
       width: 100px
       height: 100px
       transition: transform .5s ease
+      +r(767)
+        width: 60px
+        height: 60px
