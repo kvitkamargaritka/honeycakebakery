@@ -121,7 +121,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .swiper-scrollbar-cursor-drag { cursor: move; }
 
 @font-face { font-family: "Karton"; src: url("fonts/Karton.eot"); src: url("fonts/Karton.eot?#iefix") format("embedded-opentype"), url("fonts/Karton.woff2") format("woff2"), url("fonts/Karton.woff") format("woff"), url("fonts/Karton.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { padding-top: 140px; font-size: 12px; color: #4DAEB5; font-family: "Karton"; letter-spacing: 1.1px; }
+body { padding-top: 140px; font-size: 14px; color: #4DAEB5; font-family: "Karton"; letter-spacing: 1.1px; }
 
 a { text-decoration: none; cursor: pointer; color: #4DAEB5; }
 
