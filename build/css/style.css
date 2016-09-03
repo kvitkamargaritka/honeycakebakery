@@ -226,7 +226,7 @@ img { max-width: 100%; }
 
 .section-1 { font-size: 25px; text-align: left; }
 .section-1 h1 { background: url("../img/team.png") no-repeat 50% 100%; background-size: 500px; }
-.section-1 .text { -webkit-column-gap: 45px; -moz-column-gap: 45px; column-gap: 45px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; margin-bottom: 30px; }
+.section-1 .text { -webkit-column-gap: 45px; -moz-column-gap: 45px; column-gap: 45px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; margin-bottom: 30px; font-size: 18px; letter-spacing: 2px; }
 
 .section-2 h1 { background: url("../img/services-line.png") no-repeat 50% 100%; background-size: 500px; }
 
@@ -260,7 +260,26 @@ img { max-width: 100%; }
 .nav__link { display: block; padding: 10px 15px; font-size: 27px; -webkit-transition: all 300ms ease-in; transition: all 300ms ease-in; -webkit-border-radius: 50px; border-radius: 50px; white-space: nowrap; }
 .nav__link:hover { color: #fff; background-color: #4DAEB5; }
 
+.nav-mob__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.nav-mob__el { font-size: 27px; }
+.nav-mob__link { display: block; padding: 10px 15px; font-size: 27px; -webkit-transition: all 300ms ease-in; transition: all 300ms ease-in; }
+
 .topwaves { position: fixed; top: 140px; left: 0; width: 100%; height: 15px; background-image: url("../img/topwaves.png"); background-repeat: repeat-x; background-size: 44px; margin-top: 0; z-index: 25; }
+
+.mobile-mnu { width: 100%; height: 100%; display: none; position: absolute; z-index: 24; background-color: #fff; text-align: right; top: 53px; }
+
+.hamburger { display: none; cursor: pointer; }
+
+#nav-icon { width: 35px; height: 25px; position: relative; margin: 10px auto; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; cursor: pointer; }
+
+#nav-icon span { display: block; position: absolute; height: 3px; width: 100%; background: #fff; -webkit-border-radius: 9px; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.25s ease-in-out; transition: 0.25s ease-in-out; }
+
+#nav-icon span:nth-child(1) { top: 0px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
+#nav-icon span:nth-child(2) { top: 10px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
+#nav-icon span:nth-child(3) { top: 20px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
+#nav-icon.open span:nth-child(1) { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: -3px; left: 8px; }
+#nav-icon.open span:nth-child(2) { width: 0%; opacity: 0; }
+#nav-icon.open span:nth-child(3) { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); top: 22px; left: 8px; }
 
 .bg-video { position: relative; height: 600px; }
 .bg-video:before { position: absolute; content: ""; display: block; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(164, 226, 213, 0.35); z-index: 10; }
@@ -337,12 +356,17 @@ img { max-width: 100%; }
  .section-4 .items__list{ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
  .section-4 .price__img{ width: 50%; } }
 @media only screen and (max-width: 1024px){
- body{ padding-top: 98px; }
+ body{ padding-top: 55px; }
  .logo{ display: none; }
  .section-1{ font-size: 20px; }
  .follow__img{ width: 100px; height: 100px; }
- .bottomwaves{ top: 414px; }
- .topwaves{ top: 98px; }
+ .bottomwaves{ top: 372px; }
+ .nav{ display: none; }
+ .nav__link{ padding: 0 30px; }
+ .nav-mob__list{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 50px 0; }
+ .topwaves{ top: 54px; }
+ .mobile-mnu{ display: none; }
+ .hamburger{ display: block; }
  .bg-video{ display: none; }
  .bg-pic img{ width: 23%; }
  .bg-pic{ display: block; }
@@ -352,13 +376,14 @@ img { max-width: 100%; }
  .section-4 .items{ margin-top: 100px; margin-bottom: 0; }
  .section-4 .items__el{ width: 330px; margin: 0 20px 77px 20px; } }
 @media only screen and (max-width: 980px){
- .container{ width: auto; padding: 0 30px; } }
+ .container{ width: 100%; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
  .section__title{ font-size: 30px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 2; }
- .contacts{ background-size: 250px; height: 320px; padding: 1px 0; }
+ .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 1px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; }
+ .section-2 .services__el{ padding-bottom: 10px; }
  .section-3 .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
  .section-4 .items__el{ width: 250px; } }
 @media only screen and (max-width: 767px){
@@ -373,9 +398,21 @@ img { max-width: 100%; }
  .section-2 .item__img{ width: 60px; height: 60px; }
  .section-3 .items__el:nth-of-type(odd){ display: none; } }
 @media only screen and (max-width: 680px){
- body{ padding-top: 85px; }
- .topwaves{ top: 85px; }
+ body{ padding-top: 55px; }
+ .topwaves{ top: 54px; }
  .bg-pic{ height: 235px; } }
+@media only screen and (max-width: 414px){
+ .bg-pic{ height: 190px; } }
+@media only screen and (max-width: 375px){
+ .bg-pic{ height: 170px; } }
+@media only screen and (max-width: 320px){
+ .section-1 .text{ text-align: justify; line-height: 1.6; }
+ .bottomwaves{ top: 211px; }
+ .nav-mob__link{ padding: 0; }
+ .section-2 .item__left{ margin-top: 8px; }
+ .section-2 .item__right{ margin: 0 18px; }
+ .section-2 .item__title{ font-size: 25px; }
+ .section-2 .item__img{ width: 50px; height: 50px; } }
 
 
 

@@ -2067,5 +2067,11 @@ $(document).ready(function() {
         }
     });
 
+    // hamburger-menu
+    $('#nav-icon').click(function(){
+        $(this).toggleClass('open');
+        $('.mobile-mnu').fadeToggle();
+    });
+
 
 });
