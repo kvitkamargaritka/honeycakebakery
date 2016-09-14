@@ -27,30 +27,12 @@ a
 img
   max-width: 100%
 
-.ico
-  display: inline-block
-  vertical-align: middle
-
-  &_home
-    width: 32px
-    height: 32px
-    background: url("../img/ico-home.png")
-
-  &_phone
-    width: 32px
-    height: 32px
-    background: url("../img/ico-phone.png")
-
-  &_mail
-    width: 32px
-    height: 32px
-    background: url("../img/ico-mail.png")
-
 .container
   width: 1160px
   margin: 0 auto
   +r(1200)
     width: 960px
+    padding: 0 20px
   +r(980)
     width: 100%
     padding: 0 30px
@@ -110,7 +92,7 @@ img
       column-count: 1
       text-align: center
       line-height: 2
-    +r(320)
+    +r(414)
       text-align: justify
       line-height: 1.6
 
@@ -186,7 +168,14 @@ img
   z-index: 20
   +r(1024)
     top: 372px
-  +r(320)
+
+  +r(667)
+    top: 276px
+
+  +r(414)
+    top: 231px
+
+  +r(375)
     top: 211px
 
 .contacts
