@@ -10,15 +10,20 @@
         justify-content: space-around
 
     &__el
-      width: 250px
+      width: 24%
       margin-bottom: 35px
+      border-radius: 20px
+      overflow: hidden
+
       +r(767)
         &:nth-of-type(odd)
           display: none
 
     &__img
-      border-radius: 30px
-
+      display: block
+      max-width: 100%
+      width: auto
+      height: auto
 
   .item
     display: flex

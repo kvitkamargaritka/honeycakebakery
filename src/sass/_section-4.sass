@@ -2,10 +2,10 @@
   padding-bottom: 10px
 
   .items
-    margin-top: 150px
+    margin-top: 80px
     margin-bottom: 100px
     +r(1024)
-      margin-top: 100px
+      margin-top: 60px
       margin-bottom: 0
 
     &__list
@@ -16,13 +16,8 @@
         flex-wrap: wrap
 
     &__el
-      width: 250px
-      margin: 0 20px
-      +r(1024)
-        width: 330px
-        margin: 0 20px 77px 20px
-      +r(768)
-        width: 300px
+      width: 100%
+      margin: 30px 20px
 
   .price
     text-align: center
@@ -46,26 +41,34 @@
       display: inline-block
       position: relative
       top: -64px
-      width: 60%
+      width: 13%
       -webkit-filter: grayscale(30%)
       transition: all .5s ease
       +r(1200)
-        width: 50%
+        width: 15%
 
     &__center
       background: url("../img/bgribbon.jpg") repeat
       width: 100%
-      height: 50px
+      padding: 10px 0
       color: #fff
+      border-left: 5px solid $textBlue
+      border-right: 5px solid $textBlue
+      p
+        font-size: 20px
 
     &__bottom
-      padding-top: 15px
+      padding: 15px 40px
       background: #fff
       width: 100%
-      height: 200px
+      height: 100%
       border: 5px solid $textBlue
       border-radius: 0 0 30px 30px
       border-top: none
+      p
+        text-align: left
+        font-size: 17px
+        padding-bottom: 20px
       +r(415)
         height: 170px
 
@@ -77,3 +80,7 @@
     &__el
       font-size: 18px
       letter-spacing: 1.1px
+
+  .product
+    margin: 15px 0
+    text-align: left
