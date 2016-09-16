@@ -1,0 +1,26 @@
+.follow
+
+  &__list
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin-bottom: 50px
+    flex-wrap: wrap
+
+  &__link
+    display: block
+    &:hover
+      .follow__img
+        transform: rotate(360deg)
+
+  &__img
+    display: block
+    width: 140px
+    height: 140px
+    transition: transform .5s ease
+    +r(1024)
+      width: 100px
+      height: 100px
+    +r(767)
+      width: 70px
+      height: 70px
