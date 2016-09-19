@@ -25,4 +25,10 @@ $(document).ready(function() {
     });
 
 
+    $('#show-more').click(function() {
+        $('#more-works').fadeIn();
+        $(this).hide();
+    });
+
+
 });

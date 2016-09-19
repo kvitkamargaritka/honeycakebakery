@@ -372,7 +372,7 @@ img { max-width: 100%; }
  .container{ width: 100%; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
  .section__title{ font-size: 30px; }
- .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 2; }
+ .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 1.6; }
  .hamburger{ left: -120px; }
  .bg-pic{ height: 274px; }
  .section-2 .services__el{ padding-bottom: 10px; }
@@ -400,11 +400,14 @@ img { max-width: 100%; }
  .topwaves{ top: 54px; } }
 @media only screen and (max-width: 667px){
  .hamburger{ left: -105px; }
- .bottomwaves{ top: 276px; } }
+ .bottomwaves{ top: 276px; }
+ .contacts{ background-size: 200px; height: 260px; }
+ .contacts__el:last-child{ display: none; } }
 @media only screen and (max-width: 568px){
- .hamburger{ left: -90px; } }
+ .hamburger{ left: -90px; }
+ .section-2 .item__img{ width: 50px; height: 50px; } }
 @media only screen and (max-width: 415px){
- .section-1 .text{ text-align: justify; line-height: 1.6; }
+ .section-1 .text{ text-align: justify; }
  .hamburger{ left: -65px; }
  .bg-pic{ height: 183px; }
  .section-2 .item__left{ width: 18%; }
@@ -431,7 +434,9 @@ img { max-width: 100%; }
  .section-2 .item__title{ font-size: 25px; }
  .section-2 .item__img{ width: 50px; height: 50px; }
  .section-4 .items__el{ margin: 10px 0; }
- .section-4 .price__img{ top: -20px; } }
+ .section-4 .price__img{ top: -20px; }
+ .follow__list{ margin-bottom: 30px; }
+ .follow__img{ width: 50px; height: 50px; } }
 
 
 
