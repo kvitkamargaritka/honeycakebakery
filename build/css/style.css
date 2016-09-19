@@ -276,10 +276,10 @@ img { max-width: 100%; }
 
 .section-2 { padding-bottom: 40px; }
 .section-2 .services__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.section-2 .services__el { width: 100%; }
-.section-2 .item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; width: 100%; cursor: default; }
+.section-2 .services__el { width: 100%; margin: 10px 0; }
+.section-2 .item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; cursor: default; }
 .section-2 .item:hover .item__img { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
-.section-2 .item__left { margin: 30px 0 0 0; width: 10%; }
+.section-2 .item__left { margin: 15px 0 0 0; width: 10%; }
 .section-2 .item__right { margin-left: 30px; width: 90%; }
 .section-2 .item__title { color: #fff; font-size: 30px; }
 .section-2 .item__descr { font-size: 24px; color: #4DAEB5; }
@@ -297,22 +297,6 @@ img { max-width: 100%; }
 .section-3 .item .fancybox-nav:hover span { opacity: 1; }
 .section-3 .item .fancybox-next { right: -60px; }
 .section-3 .item .fancybox-prev { left: -60px; }
-.section-3 .item_1 .item__top { background: url("../img/cake1.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_2 .item__top { background: url("../img/cake2.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_3 .item__top { background: url("../img/cake3.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_4 .item__top { background: url("../img/cake4.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_5 .item__top { background: url("../img/cake5.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_6 .item__top { background: url("../img/cake6.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_7 .item__top { background: url("../img/cake7.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_8 .item__top { background: url("../img/cake8.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_9 .item__top { background: url("../img/cake9.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_10 .item__top { background: url("../img/cake10.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_11 .item__top { background: url("../img/cake11.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_12 .item__top { background: url("../img/cake12.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_13 .item__top { background: url("../img/cake13.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_14 .item__top { background: url("../img/cake14.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_15 .item__top { background: url("../img/cake15.jpg") no-repeat center left; background-size: cover; }
-.section-3 .item_16 .item__top { background: url("../img/cake16.jpg") no-repeat center left; background-size: cover; }
 
 .section-4 { padding-bottom: 10px; }
 .section-4 .items { margin-top: 80px; margin-bottom: 100px; }
@@ -379,6 +363,7 @@ img { max-width: 100%; }
  .section-2 .item__left{ width: 15%; }
  .section-2 .item__right{ width: 85%; margin: 0 30px; }
  .section-2 .item__descr{ line-height: 1.6; }
+ .section-3 .items__el:last-child{ display: none; }
  .section-4 .items{ margin-top: 60px; margin-bottom: 0; }
  .topwaves{ top: 54px; }
  .bottomwaves{ top: 372px; }
@@ -389,10 +374,12 @@ img { max-width: 100%; }
  .section__title{ font-size: 30px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 2; }
  .hamburger{ left: -120px; }
+ .bg-pic{ height: 274px; }
  .section-2 .services__el{ padding-bottom: 10px; }
  .section-3 .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
  .section-4 .price__top{ height: 70px; }
  .section-4 .price__img{ top: -51px; }
+ .bottomwaves{ top: 315px; }
  .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 1px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; } }
@@ -414,11 +401,15 @@ img { max-width: 100%; }
 @media only screen and (max-width: 667px){
  .hamburger{ left: -105px; }
  .bottomwaves{ top: 276px; } }
+@media only screen and (max-width: 568px){
+ .hamburger{ left: -90px; } }
 @media only screen and (max-width: 415px){
  .section-1 .text{ text-align: justify; line-height: 1.6; }
  .hamburger{ left: -65px; }
  .bg-pic{ height: 183px; }
- .section-2 .item__right{ margin: 0; }
+ .section-2 .item__left{ width: 18%; }
+ .section-2 .item__right{ width: 72%; margin: 0; }
+ .section-2 .item__img{ width: 40px; height: 40px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
  .topwaves{ display: none; }

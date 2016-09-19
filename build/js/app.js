@@ -2073,5 +2073,9 @@ $(document).ready(function() {
         $('.mobile-mnu').fadeToggle();
     });
 
+    $('.nav-mob__el').click(function(){
+        $('.nav-mob:visible').click();
+    });
+
 
 });
