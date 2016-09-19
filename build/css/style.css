@@ -410,6 +410,9 @@ img { max-width: 100%; }
  .section-2 .item__left{ width: 18%; }
  .section-2 .item__right{ width: 72%; margin: 0; }
  .section-2 .item__img{ width: 40px; height: 40px; }
+ .section-4 .items{ margin-top: 30px; }
+ .section-4 .items__el{ margin: 20px 0; }
+ .section-4 .price__img{ top: -30px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
  .topwaves{ display: none; }
@@ -422,10 +425,13 @@ img { max-width: 100%; }
 @media only screen and (max-width: 320px){
  .nav-mob__link{ padding: 0; }
  .hamburger{ left: -53px; }
- .section-2 .item__left{ margin-top: 8px; }
- .section-2 .item__right{ margin: 0 18px; }
+ .section-2 .services__el{ padding-bottom: 0; }
+ .section-2 .item__left{ display: none; }
+ .section-2 .item__right{ width: 100%; }
  .section-2 .item__title{ font-size: 25px; }
- .section-2 .item__img{ width: 50px; height: 50px; } }
+ .section-2 .item__img{ width: 50px; height: 50px; }
+ .section-4 .items__el{ margin: 10px 0; }
+ .section-4 .price__img{ top: -20px; } }
 
 
 
