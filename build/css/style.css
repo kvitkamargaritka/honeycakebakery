@@ -352,7 +352,6 @@ img { max-width: 100%; }
  .section-4 .items__list{ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
  .section-4 .price__img{ width: 15%; } }
 @media only screen and (max-width: 1024px){
- body{ padding-top: 55px; }
  .section-1{ font-size: 20px; }
  .bg-video{ display: none; }
  .bg-pic img{ width: 23%; }
@@ -366,6 +365,7 @@ img { max-width: 100%; }
 @media only screen and (max-width: 980px){
  .container{ width: 100%; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
+ body{ padding-top: 55px; }
  .logo{ display: none; }
  .section__title{ font-size: 30px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 1.6; }
