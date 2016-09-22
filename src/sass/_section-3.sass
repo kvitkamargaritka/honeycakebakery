@@ -16,16 +16,22 @@
       overflow: hidden
 
       +r(1024)
-        &:last-child
-          display: none
+        //&:last-child
+        //  display: none
 
-      +r(767)
-        &:nth-of-type(odd)
-          display: none
+      +r(768)
+        //&:nth-of-type(11)
+        //  display: none
+        //&:nth-of-type(19)
+        //  display: none
 
     &__img
       display: block
       max-width: 100%
+
+    &__more
+      text-align: center
+      padding-bottom: 20px
 
   .item
     display: flex
