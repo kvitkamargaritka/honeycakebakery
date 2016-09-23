@@ -360,7 +360,7 @@ img { max-width: 100%; }
  .section-2 .item__descr{ line-height: 1.6; }
  .section-4 .items{ margin-top: 60px; margin-bottom: 0; }
  .topwaves{ top: 139px; }
- .bottomwaves{ top: 372px; }
+ .bottomwaves{ display: none; }
  .follow__img{ width: 100px; height: 100px; } }
 @media only screen and (max-width: 980px){
  .container{ width: 100%; padding: 0 30px; } }
@@ -382,7 +382,7 @@ img { max-width: 100%; }
  .section-4 .price__img{ top: -51px; }
  .section-4 .price__bottom p{ padding-bottom: 7px; }
  .topwaves{ top: 54px; }
- .bottomwaves{ top: 315px; }
+ .bottomwaves{ display: block; top: 315px; }
  .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 1px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; } }
@@ -415,18 +415,18 @@ img { max-width: 100%; }
  .section-2 .item__left{ width: 18%; }
  .section-2 .item__right{ width: 72%; margin: 0; }
  .section-2 .item__img{ width: 40px; height: 40px; }
+ .section-2 .section__title{ margin-bottom: 5px; }
  .section-4 .items{ margin-top: 30px; }
  .section-4 .items__el{ margin: 20px 0; }
  .section-4 .price__img{ top: -30px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
  .topwaves{ display: none; }
- .bottomwaves{ display: none; top: 231px; }
+ .bottomwaves{ display: none; }
  .contacts__list{ margin-top: 80px; } }
 @media only screen and (max-width: 375px){
  .hamburger{ left: -60px; }
- .bg-pic{ height: 170px; }
- .bottomwaves{ top: 211px; } }
+ .bg-pic{ height: 170px; } }
 @media only screen and (max-width: 320px){
  .nav-mob__link{ padding: 0; }
  .hamburger{ left: -53px; }

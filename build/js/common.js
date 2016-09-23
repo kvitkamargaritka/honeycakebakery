@@ -19,9 +19,9 @@ $(document).ready(function() {
         $(this).toggleClass('open');
         $('.mobile-mnu').fadeToggle();
     });
-
-    $('.nav-mob__el').click(function(){
-        $('.nav-mob:visible').click();
+    $('.nav-mob__link').click(function(){
+        $('.mobile-mnu').fadeToggle();
+        $('#nav-icon').removeClass('open');
     });
 
     // btn show-more
@@ -43,8 +43,7 @@ $(document).ready(function() {
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top - margin}, 1000);
+
     });
-
-
 
 });
