@@ -3,11 +3,16 @@
   &__list
     display: flex
     flex-direction: row
-    justify-content: space-around
+    justify-content: center
     margin-bottom: 50px
     flex-wrap: wrap
     +r(320)
       margin-bottom: 30px
+
+  &__el
+    margin: 0 15px
+    +r(415)
+      margin: 0 5px
 
   &__link
     display: block
@@ -17,15 +22,15 @@
 
   &__img
     display: block
-    width: 140px
-    height: 140px
+    width: 100px
+    height: 100px
     transition: transform .5s ease
     +r(1024)
-      width: 100px
-      height: 100px
+      width: 90px
+      height: 90px
     +r(767)
       width: 70px
       height: 70px
-    +r(320)
+    +r(415)
       width: 50px
       height: 50px

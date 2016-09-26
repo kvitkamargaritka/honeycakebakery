@@ -328,15 +328,16 @@ img { max-width: 100%; }
 
 .bottomwaves { position: absolute; top: 726px; left: 0; width: 100%; height: 15px; background-image: url("../img/bottomwaves.png"); background-repeat: repeat-x; background-size: 44px; margin-top: 0; z-index: 20; }
 
-.contacts { width: 380px; height: 500px; margin: 0 auto; padding: 75px 45px; text-align: center; background: url("../img/bigmarker.png") no-repeat center; }
+.contacts { width: 380px; height: 400px; margin: 0 auto; padding: 33px 45px; text-align: center; background: url("../img/bigmarker.png") no-repeat center; background-size: 300px; }
 .contacts__list { text-align: center; margin-top: 60px; }
 .contacts__el { margin-bottom: 10px; padding: 0; }
 .contacts__text { display: block; font-size: 24px; color: #a9a9a9; }
 
-.follow__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; margin-bottom: 50px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.follow__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 50px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.follow__el { margin: 0 15px; }
 .follow__link { display: block; }
 .follow__link:hover .follow__img { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
-.follow__img { display: block; width: 140px; height: 140px; -webkit-transition: -webkit-transform 0.5s ease; transition: transform 0.5s ease; }
+.follow__img { display: block; width: 100px; height: 100px; -webkit-transition: -webkit-transform 0.5s ease; transition: transform 0.5s ease; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
@@ -361,7 +362,7 @@ img { max-width: 100%; }
  .section-4 .items{ margin-top: 60px; margin-bottom: 0; }
  .topwaves{ top: 139px; }
  .bottomwaves{ display: none; }
- .follow__img{ width: 100px; height: 100px; } }
+ .follow__img{ width: 90px; height: 90px; } }
 @media only screen and (max-width: 980px){
  .container{ width: 100%; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
@@ -383,7 +384,7 @@ img { max-width: 100%; }
  .section-4 .price__bottom p{ padding-bottom: 7px; }
  .topwaves{ top: 54px; }
  .bottomwaves{ display: block; top: 315px; }
- .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 1px 0; }
+ .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 15px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; } }
 @media only screen and (max-width: 767px){
@@ -403,7 +404,7 @@ img { max-width: 100%; }
 @media only screen and (max-width: 667px){
  .hamburger{ left: -105px; }
  .bottomwaves{ top: 276px; }
- .contacts{ background-size: 200px; height: 260px; }
+ .contacts{ background-size: 180px; height: 230px; padding: 1px 0; }
  .contacts__el:last-child{ display: none; } }
 @media only screen and (max-width: 568px){
  .hamburger{ left: -90px; }
@@ -418,12 +419,15 @@ img { max-width: 100%; }
  .section-2 .section__title{ margin-bottom: 5px; }
  .section-4 .items{ margin-top: 30px; }
  .section-4 .items__el{ margin: 20px 0; }
+ .section-4 .price__top{ height: 40px; }
  .section-4 .price__img{ top: -30px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
  .topwaves{ display: none; }
  .bottomwaves{ display: none; }
- .contacts__list{ margin-top: 80px; } }
+ .contacts__list{ margin-top: 80px; }
+ .follow__el{ margin: 0 5px; }
+ .follow__img{ width: 50px; height: 50px; } }
 @media only screen and (max-width: 375px){
  .hamburger{ left: -60px; }
  .bg-pic{ height: 170px; } }
@@ -437,8 +441,7 @@ img { max-width: 100%; }
  .section-2 .item__img{ width: 50px; height: 50px; }
  .section-4 .items__el{ margin: 10px 0; }
  .section-4 .price__img{ top: -20px; }
- .follow__list{ margin-bottom: 30px; }
- .follow__img{ width: 50px; height: 50px; } }
+ .follow__list{ margin-bottom: 30px; } }
 
 
 
