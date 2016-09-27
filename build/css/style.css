@@ -243,9 +243,9 @@ img { max-width: 100%; }
 
 .hamburger { display: none; cursor: pointer; position: relative; }
 
-#nav-icon { width: 35px; height: 25px; position: relative; margin: 10px auto; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; cursor: pointer; }
+#nav-icon { width: 35px; height: 25px; position: relative; margin-top: 9px; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; cursor: pointer; }
 
-#nav-icon span { display: block; position: absolute; height: 3px; width: 100%; background-color: rgba(255, 255, 255, 0.8); -webkit-border-radius: 9px; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.25s ease-in-out; transition: 0.25s ease-in-out; }
+#nav-icon span { display: block; position: absolute; height: 3px; width: 100%; background-color: #fff; -webkit-border-radius: 9px; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: 0.25s ease-in-out; transition: 0.25s ease-in-out; }
 
 #nav-icon span:nth-child(1) { top: 0px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
 #nav-icon span:nth-child(2) { top: 10px; -webkit-transform-origin: left center; -ms-transform-origin: left center; transform-origin: left center; }
@@ -369,7 +369,7 @@ img { max-width: 100%; }
  .logo{ display: none; }
  .section__title{ font-size: 30px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 1.6; }
- .header{ height: 42px; padding-top: 0; }
+ .header{ height: 40px; padding-top: 0; background-color: rgba(164, 226, 213, 0.3); }
  .hamburger{ display: block; left: -131px; }
  .bg-pic{ display: block; height: 263px; }
  .section-2 .services__el{ padding-bottom: 10px; }
@@ -379,7 +379,7 @@ img { max-width: 100%; }
  .section-4 .price__top{ height: 70px; }
  .section-4 .price__img{ top: -51px; }
  .section-4 .price__bottom p{ padding-bottom: 7px; }
- .mobile-mnu{ display: none; position: fixed; top: 41px; }
+ .mobile-mnu{ display: none; position: fixed; top: 40px; }
  .nav-mob__list{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 50px 0; }
  .nav{ display: none; }
  .nav__link{ padding: 0 30px; }
