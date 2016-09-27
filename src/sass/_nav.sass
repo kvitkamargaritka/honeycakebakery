@@ -1,0 +1,34 @@
+.nav
+  padding: 0 50px
+  +r(1200)
+    padding: 0
+
+  +r(768)
+    display: none
+
+  &__list
+    display: flex
+
+  &__el
+    margin: 0 30px
+    +r(1200)
+      margin: 0 15px
+    +r(767)
+      margin: 0
+
+  &__link
+    display: block
+    padding: 10px 15px
+    font-size: 27px
+    transition: all 300ms ease-in
+    border-radius: 50px
+    white-space: nowrap
+    +r(768)
+      padding: 0 30px
+
+    +r(767)
+      font-size: 22px
+
+    &:hover
+      color: #fff
+      background-color: $textBlue
