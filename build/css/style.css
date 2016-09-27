@@ -365,25 +365,24 @@ img { max-width: 100%; }
 @media only screen and (max-width: 980px){
  .container{ width: 100%; padding: 0 30px; } }
 @media only screen and (max-width: 768px){
- body{ padding-top: 55px; }
+ body{ padding-top: 40px; }
  .logo{ display: none; }
  .section__title{ font-size: 30px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; line-height: 1.6; }
- .header{ height: 56px; }
- .hamburger{ display: block; left: -120px; }
- .bg-pic{ display: block; height: 274px; }
+ .header{ height: 42px; padding-top: 0; }
+ .hamburger{ display: block; left: -131px; }
+ .bg-pic{ display: block; height: 263px; }
  .section-2 .services__el{ padding-bottom: 10px; }
  .section-3 .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
  .section-4 .items__el{ margin: 30px 0; }
  .section-4 .price__top{ height: 70px; }
  .section-4 .price__img{ top: -51px; }
  .section-4 .price__bottom p{ padding-bottom: 7px; }
- .mobile-mnu{ display: none; position: fixed; }
+ .mobile-mnu{ display: none; position: fixed; top: 41px; }
  .nav-mob__list{ -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 50px 0; }
  .nav{ display: none; }
  .nav__link{ padding: 0 30px; }
- .topwaves{ top: 54px; }
- .bottomwaves{ display: block; top: 315px; }
+ .topwaves{ display: none; }
  .contacts{ background-size: 250px; width: 100%; height: 320px; padding: 15px 0; }
  .contacts__list{ margin-top: 65px; }
  .contacts__text{ font-size: 17px; } }
@@ -398,25 +397,23 @@ img { max-width: 100%; }
  .nav__link{ font-size: 22px; }
  .follow__img{ width: 70px; height: 70px; } }
 @media only screen and (max-width: 736px){
+ .hamburger{ left: -127px; }
  .nav-mob__link{ font-size: 26px; padding: 6px 15px; } }
 @media only screen and (max-width: 680px){
- body{ padding-top: 55px; }
- .bg-pic{ height: 235px; }
- .topwaves{ top: 54px; } }
+ .bg-pic{ height: 235px; } }
 @media only screen and (max-width: 667px){
- .hamburger{ left: -105px; }
+ .hamburger{ left: -117px; }
  .nav-mob__list{ margin: 26px 0; }
- .bottomwaves{ top: 276px; }
  .contacts{ background-size: 180px; height: 230px; padding: 1px 0; }
  .contacts__el:last-child{ display: none; } }
 @media only screen and (max-width: 568px){
- .hamburger{ left: -90px; }
+ .hamburger{ left: -100px; }
  .section-2 .item__img{ width: 50px; height: 50px; }
  .nav-mob__list{ margin: 22px 0; }
  .nav-mob__link{ font-size: 25px; padding: 3px 15px; } }
 @media only screen and (max-width: 415px){
  .section-1 .text{ text-align: justify; }
- .hamburger{ left: -65px; }
+ .hamburger{ left: -75px; }
  .bg-pic{ height: 183px; }
  .section-2 .item__left{ width: 18%; }
  .section-2 .item__right{ width: 72%; margin: 0; }
@@ -428,16 +425,14 @@ img { max-width: 100%; }
  .section-4 .price__img{ top: -30px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
- .topwaves{ display: none; }
- .bottomwaves{ display: none; }
  .contacts__list{ margin-top: 80px; }
  .follow__el{ margin: 0 5px; }
  .follow__img{ width: 50px; height: 50px; } }
 @media only screen and (max-width: 375px){
- .hamburger{ left: -60px; }
+ .hamburger{ left: -69px; }
  .bg-pic{ height: 170px; } }
 @media only screen and (max-width: 320px){
- .hamburger{ left: -53px; }
+ .hamburger{ left: -60px; }
  .section-2 .services__el{ padding-bottom: 0; }
  .section-2 .item__left{ display: none; }
  .section-2 .item__right{ width: 100%; }
