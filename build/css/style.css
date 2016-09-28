@@ -239,6 +239,7 @@ img { max-width: 100%; }
 .section-3 h1 { color: #4DAEB5; background: url("../img/heart-line.png") no-repeat 50% 100%; background-size: 500px; }
 
 .header { position: fixed; top: 0; left: 0; padding-top: 10px; width: 100%; height: 140px; background-color: #A4E2D5; z-index: 25; }
+.header.menu-open { background-color: #a4e2d5; }
 .header__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 .hamburger { display: none; cursor: pointer; position: relative; }

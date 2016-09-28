@@ -18,10 +18,12 @@ $(document).ready(function() {
     $('#nav-icon').click(function(){
         $(this).toggleClass('open');
         $('.mobile-mnu').fadeToggle();
+        $('.header').toggleClass('menu-open');
     });
     $('.nav-mob__link').click(function(){
         $('.mobile-mnu').fadeToggle();
         $('#nav-icon').removeClass('open');
+        $('.header').removeClass('menu-open');
     });
 
     // btn show-more
