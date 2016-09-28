@@ -1,5 +1,14 @@
 .fancybox-close
   background-image: url("../img/close-btn.svg")
+  +r(768)
+    background: url("../img/close-btn.svg") no-repeat
+
+  +r(736)
+    top: -12px
+    right: -13px
+    width: 25px
+    height: 25px
+
 
 .fancybox-prev span
   background: url("../img/right-btn.svg")center center no-repeat
