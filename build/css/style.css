@@ -304,7 +304,7 @@ img { max-width: 100%; }
 .section-4 .item__el { font-size: 18px; letter-spacing: 1.1px; }
 .section-4 .product { margin: 15px 0; text-align: left; }
 .section-4 .product__title { font-size: 25px; }
-.section-4 .product__subscribe { color: #2d8c90; text-align: left; font-size: 17px; padding-bottom: 20px; font-family: "poiretone", Helvetica, Arial, sans-serif; }
+.section-4 .product__subscribe { color: #2d8c90; text-align: left; font-size: 19px; padding-bottom: 20px; font-family: "poiretone", Helvetica, Arial, sans-serif; }
 
 .ico { display: inline-block; vertical-align: middle; }
 .ico_home, .ico_phone, .ico_mail { width: 32px; height: 32px; }
@@ -382,7 +382,7 @@ img { max-width: 100%; }
 @media only screen and (max-width: 768px){
  body{ padding-top: 40px; }
  .logo{ display: none; }
- .section__title{ font-size: 30px; }
+ .section__title{ font-size: 30px; margin-bottom: 20px; }
  .section-1 .text{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; text-align: center; font-size: 18px; line-height: 1.2; }
  .header{ height: 40px; padding-top: 0; background-color: rgba(164, 226, 213, 0.3); }
  .hamburger{ display: block; left: -131px; }
@@ -447,8 +447,11 @@ img { max-width: 100%; }
  .section__title{ margin-bottom: 12px; }
  .section-1 .text{ text-align: justify; }
  .bg-pic{ height: 183px; }
+ .section-2 .services__el{ padding-bottom: 0; }
  .section-2 .item__left{ width: 18%; }
  .section-2 .item__right{ width: 72%; margin: 0; }
+ .section-2 .item__title{ font-size: 25px; }
+ .section-2 .item__descr{ font-size: 16px; }
  .section-2 .item__img{ width: 40px; height: 40px; }
  .section-2 .section__title{ margin-bottom: 5px; }
  .section-4 .items{ margin-top: 30px; }
@@ -458,7 +461,8 @@ img { max-width: 100%; }
  .section-4 .price__center{ padding: 10px; }
  .section-4 .price__bottom{ padding: 15px 25px; }
  .section-4 .product{ margin: 0; }
- .contacts{ background-size: 200px; height: 255px; }
+ .section-4 .product__subscribe{ font-size: 16px; }
+ .contacts{ background-size: 200px; height: 255px; padding: 1px 0; }
  .contacts__list{ margin-top: 80px; }
  .follow__el{ margin: 0 5px; }
  .follow__img{ width: 50px; height: 50px; } }
@@ -469,10 +473,8 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 320px){
  .hamburger{ left: -55px; }
- .section-2 .services__el{ padding-bottom: 0; }
  .section-2 .item__left{ display: none; }
  .section-2 .item__right{ width: 100%; }
- .section-2 .item__title{ font-size: 25px; }
  .section-2 .item__img{ width: 50px; height: 50px; }
  .section-4 .items__el{ margin: 13px 0; }
  .section-4 .price__img{ top: -20px; }
