@@ -433,12 +433,15 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 568px){
  .hamburger{ left: -100px; }
- .section-2 .item__img{ width: 50px; height: 50px; }
+ .section-2 .item__img{ width: 45px; height: 45px; }
  .nav-mob__list{ margin: 22px 0; }
  .nav-mob__link{ font-size: 25px; padding: 3px 15px; } }
 
 @media only screen and (max-width: 525px){
  .hamburger{ left: -87px; } }
+
+@media only screen and (max-width: 480px){
+ .section-2 .item__img{ width: 40px; height: 40px; } }
 
 @media only screen and (max-width: 450px){
  .hamburger{ left: -75px; } }
@@ -448,11 +451,11 @@ img { max-width: 100%; }
  .section-1 .text{ text-align: justify; }
  .bg-pic{ height: 183px; }
  .section-2 .services__el{ padding-bottom: 0; }
- .section-2 .item__left{ width: 18%; }
+ .section-2 .item__left{ display: none; }
  .section-2 .item__right{ width: 72%; margin: 0; }
+ .section-2 .item__right{ width: 100%; }
  .section-2 .item__title{ font-size: 25px; }
  .section-2 .item__descr{ font-size: 16px; }
- .section-2 .item__img{ width: 40px; height: 40px; }
  .section-2 .section__title{ margin-bottom: 5px; }
  .section-4 .items{ margin-top: 30px; }
  .section-4 .items__el{ margin: 20px 0; }
@@ -473,9 +476,6 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 320px){
  .hamburger{ left: -55px; }
- .section-2 .item__left{ display: none; }
- .section-2 .item__right{ width: 100%; }
- .section-2 .item__img{ width: 50px; height: 50px; }
  .section-4 .items__el{ margin: 13px 0; }
  .section-4 .price__img{ top: -20px; }
  .nav-mob__link{ padding: 0; }
