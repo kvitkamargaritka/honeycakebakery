@@ -424,8 +424,9 @@ img { max-width: 100%; }
 @media only screen and (max-width: 667px){
  .hamburger{ left: -117px; }
  .nav-mob__list{ margin: 26px 0; }
- .contacts{ background-size: 180px; height: 230px; padding: 1px 0; }
- .contacts__el:last-child{ display: none; } }
+ .contacts{ background-size: 200px; height: 255px; }
+ .contacts__el:last-child{ display: none; }
+ .contacts__text{ font-size: 13px; } }
 
 @media only screen and (max-width: 640px){
  .hamburger{ left: -107px; } }
@@ -459,7 +460,6 @@ img { max-width: 100%; }
  .section-4 .product{ margin: 0; }
  .contacts{ background-size: 200px; height: 255px; }
  .contacts__list{ margin-top: 80px; }
- .contacts__text{ font-size: 13px; }
  .follow__el{ margin: 0 5px; }
  .follow__img{ width: 50px; height: 50px; } }
 
@@ -474,7 +474,7 @@ img { max-width: 100%; }
  .section-2 .item__right{ width: 100%; }
  .section-2 .item__title{ font-size: 25px; }
  .section-2 .item__img{ width: 50px; height: 50px; }
- .section-4 .items__el{ margin: 10px 0; }
+ .section-4 .items__el{ margin: 13px 0; }
  .section-4 .price__img{ top: -20px; }
  .nav-mob__link{ padding: 0; }
  .follow__list{ margin-bottom: 30px; } }
