@@ -1,6 +1,7 @@
 .bg-video
   position: relative
   height: 600px
+  display: none
   &:before
     position: absolute
     content: ''
@@ -13,6 +14,14 @@
     z-index: 10
 
   +r(1024)
+    display: none
+
+.main-pic
+  height: 650px
+  background-image: url("../img/cake-main.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  +r(768)
     display: none
 
 .bg-pic

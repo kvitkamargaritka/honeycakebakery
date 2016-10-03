@@ -2094,7 +2094,7 @@ $(document).ready(function() {
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
-        margin = 140;
+        margin = 100;
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top - margin}, 1000);
