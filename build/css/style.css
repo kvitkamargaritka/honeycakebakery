@@ -368,6 +368,7 @@ img { max-width: 100%; }
 @media only screen and (max-width: 1024px){
  .section-1{ font-size: 20px; }
  .bg-video{ display: none; }
+ .main-pic{ background-position: 0 0; }
  .bg-pic img{ width: 23%; }
  .section-2 .item__left{ width: 15%; }
  .section-2 .item__right{ width: 85%; margin: 0 30px; }
