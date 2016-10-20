@@ -2058,6 +2058,7 @@ $(document).ready(function() {
     //fancybox
     $(".img-gallery").fancybox({
         padding : 0,
+        titleShow : true,
         //openEffect	: 'none',
         //closeEffect	: 'none',
         helpers: {

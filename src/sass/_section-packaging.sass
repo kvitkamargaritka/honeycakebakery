@@ -9,5 +9,19 @@
       display: flex
       justify-content: space-around
 
+      +r(375)
+        display: flex
+        flex-direction: column
+
+    &__el
+      margin-right: 10px
+
+      +r(415)
+        margin-bottom: 15px
+
+      +r(375)
+        &:last-child
+          display: none
+
     img
       border-radius: 20px
