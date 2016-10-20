@@ -2101,4 +2101,20 @@ $(document).ready(function() {
 
     });
 
+    // accordion
+    function accordion () {
+        $('.items__el').each(function(index, el) {
+            $('.items__el').click(function () {
+                if (!$(this).toggleClass('is-active')) {
+                    $('.items__el').removeClass('is-active');
+                    $(this).addClass('is-active');
+                }
+            })
+        });
+
+    }
+
+    accordion()
+
+
 });
