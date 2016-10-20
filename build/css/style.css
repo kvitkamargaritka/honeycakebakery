@@ -256,6 +256,9 @@ img { max-width: 100%; }
 
 .main-bg { height: 650px; background-image: url("../img/main-cake3.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 -190px; }
 
+.mobile-pic { display: none; text-align: center; height: 263px; background-color: #4DAEB5; }
+.mobile-pic img { width: 23%; margin: 45px auto; }
+
 .section-gallery .items__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .section-gallery .items__el { width: 250px; margin-bottom: 35px; -webkit-border-radius: 50px; border-radius: 50px; overflow: hidden; }
 .section-gallery .items__img { display: block; max-width: 100%; }
@@ -379,6 +382,7 @@ img { max-width: 100%; }
  .header{ height: 40px; padding-top: 0; background-color: rgba(164, 226, 213, 0.3); }
  .hamburger{ display: block; left: -131px; }
  .main-bg{ display: none; }
+ .mobile-pic{ display: block; }
  .section-gallery .items__list{ -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
  .section-prices .items__el{ margin: 20px 0; }
  .section-prices .product__subscribe{ padding-bottom: 7px; }
@@ -433,6 +437,7 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 415px){
  .section__title{ margin-bottom: 12px; }
+ .mobile-pic{ height: 183px; }
  .section-prices .items{ margin-top: 30px; }
  .section-prices .items__el{ margin: 20px 0; }
  .section-prices .product{ margin: 0; }
@@ -455,6 +460,7 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 375px){
  .hamburger{ left: -65px; }
+ .mobile-pic{ height: 170px; }
  .section-prices .price__title:before{ padding: 0 20px; left: 10px; }
  .section-prices .price__title{ padding: 0 20px; }
  .section-packaging .boxs__list{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
