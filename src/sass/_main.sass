@@ -59,15 +59,16 @@ img
 .section
   width: 100%
   background-color: $bgBlue
+  padding: 40px 0
 
-.section-who, .section-services, .section-gallery, .section-who
-  background-color: #fff
+  +r(415)
+    padding: 30px 0
 
-.section
-  padding-bottom: 40px
+  +r(320)
+    padding: 20px 0
 
   &__title
-    padding: 20px 0
+    padding-bottom: 20px
     margin-bottom: 30px
     text-align: center
     font-size: 40px
@@ -75,8 +76,10 @@ img
     +r(768)
       font-size: 30px
       margin-bottom: 20px
-    +r(415)
-      margin-bottom: 12px
+
+
+.section-who, .section-services, .section-gallery, .section-who
+  background-color: #fff
 
 .section-who
   h1

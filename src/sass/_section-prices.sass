@@ -3,12 +3,8 @@
   .items
     background: #fff
     border-radius: 20px
-    margin-top: 50px
     +r(1024)
       margin-bottom: 0
-
-    +r(415)
-      margin-top: 30px
 
     &__list
       padding: 40px 0
@@ -45,6 +41,7 @@
   .price
     text-align: center
     border-bottom: none
+    cursor: pointer
 
     &:hover
       .price__img
@@ -54,7 +51,6 @@
       display: inline-flex
       font-size: 25px
       position: relative
-      cursor: pointer
 
       &:before
         position: absolute
@@ -67,12 +63,14 @@
         border-width: 6px 0 6px 10px
         border-color: transparent transparent transparent $textBlue
         +r(375)
-          padding: 0 20px
-          left: 10px
+          left: -7px
 
       +r(375)
-        padding: 0 20px
+        padding: 0 5px
+        font-size: 23px
 
+      +r(320)
+        margin: 0 20px
     p
       font-size: 20px
 
@@ -102,6 +100,9 @@
 .drop-down
   padding: 15px 40px
   display: none
+
+  +r(415)
+    padding: 15px 20px
 
 
 
