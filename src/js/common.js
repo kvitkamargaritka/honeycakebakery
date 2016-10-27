@@ -6,11 +6,14 @@ $(document).ready(function() {
     $(".img-gallery").fancybox({
         padding : 0,
         titleShow : true,
-        //openEffect	: 'none',
-        //closeEffect	: 'none',
+        transitionIn : 'fade',
+
         helpers: {
             overlay: {
                 locked: false
+            },
+            title : {
+                type : 'over'
             }
         }
     });
@@ -30,6 +33,11 @@ $(document).ready(function() {
     // btn show-more
     $('#show-more').click(function() {
         $('#more-works').fadeIn();
+        $(this).hide();
+    });
+
+    $('#show-more2').click(function() {
+        $('#more-works2').fadeIn();
         $(this).hide();
     });
 

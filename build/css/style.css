@@ -252,7 +252,7 @@ img { max-width: 100%; }
 #nav-icon.open span:nth-child(2) { width: 0%; opacity: 0; }
 #nav-icon.open span:nth-child(3) { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); top: 22px; left: 8px; }
 
-.main-bg { height: 650px; background-image: url("../img/main-cake3.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 -190px; }
+.main-bg { height: 650px; background-image: url("../img/main-cake3.jpg"); background-repeat: no-repeat; background-size: cover; }
 
 .mobile-pic { display: none; text-align: center; height: 263px; background-color: #4DAEB5; }
 .mobile-pic img { width: 23%; margin: 45px auto; }
@@ -428,6 +428,7 @@ img { max-width: 100%; }
 
 @media only screen and (max-width: 568px){
  .hamburger{ left: -100px; }
+ .mobile-pic{ height: 235px; }
  .section-services .item__img{ width: 45px; height: 45px; }
  .nav-mob__list{ margin: 22px 0; }
  .nav-mob__link{ font-size: 25px; padding: 3px 15px; } }
