@@ -11,10 +11,11 @@ $(document).ready(function() {
         helpers: {
             overlay: {
                 locked: false
-            },
-            title : {
-                type : 'over'
             }
+
+            //title : {
+            //    type : 'outside'
+            //}
         }
     });
 
