@@ -279,10 +279,10 @@ img { max-width: 100%; }
 .section-prices .items__el.is-active .price__title:before { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
 .section-prices .price { text-align: center; border-bottom: none; cursor: pointer; }
 .section-prices .price:hover .price__img { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg); }
-.section-prices .price__title { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; font-size: 25px; position: relative; }
+.section-prices .price__title { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; font-size: 25px; position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .section-prices .price__title:before { position: absolute; top: 8px; left: -20px; content: ""; width: 0; height: 0; border-style: solid; border-width: 6px 0 6px 10px; border-color: transparent transparent transparent #4DAEB5; }
 .section-prices .price p { font-size: 20px; }
-.section-prices .product { margin: 15px 0; text-align: left; }
+.section-prices .product { margin: 15px 0; text-align: left; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: default; }
 .section-prices .product__title { font-size: 25px; }
 .section-prices .product__subscribe { color: #2d8c90; text-align: left; font-size: 19px; padding-bottom: 20px; font-family: "poiretone", Helvetica, Arial, sans-serif; }
 
@@ -313,6 +313,12 @@ img { max-width: 100%; }
 .section-contacts .contacts__list { text-align: center; margin-top: 50px; }
 .section-contacts .contacts__el { margin-bottom: 10px; padding: 0; }
 .section-contacts .contacts__text { display: block; font-size: 20px; color: #868484; }
+
+.swiper-container { width: 100%; height: 100%; }
+
+.slide__img_1 { height: 700px; background: top center no-repeat; background-size: cover; background-image: url("../img/main-cake3.jpg"); }
+.slide__img_2 { height: 700px; background: top center no-repeat; background-size: cover; background-image: url("../img/0408.jpg"); }
+.slide__img_3 { height: 700px; background: top center no-repeat; background-size: cover; background-image: url("../img/1328.jpg"); }
 
 .mobile-mnu { width: 100%; height: 100%; display: none; position: absolute; z-index: 24; background-color: #fff; text-align: right; top: 53px; }
 
@@ -385,6 +391,7 @@ img { max-width: 100%; }
  .hamburger{ display: block; left: -131px; }
  .main-bg{ display: none; }
  .mobile-pic{ display: block; }
+ .section-gallery #show-more{ display: none; }
  .section-prices .items__el{ margin: 20px 0; }
  .section-prices .product__subscribe{ padding-bottom: 7px; }
  .section-services .services__el{ padding-bottom: 10px; }

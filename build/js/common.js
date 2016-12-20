@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    $('.player').mb_YTPlayer();
-
     //fancybox
     $(".img-gallery").fancybox({
         padding : 0,
@@ -42,6 +40,12 @@ $(document).ready(function() {
         $(this).hide();
     });
 
+    $('#show-more3').click(function() {
+        $('#more-works3').fadeIn();
+        $(this).hide();
+    });
+
+
     // nav
     $(".nav").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
@@ -50,7 +54,7 @@ $(document).ready(function() {
         var id  = $(this).attr('href'),
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
-        top = $(id).offset().top;
+          top = $(id).offset().top;
         margin = 100;
 
         //анимируем переход на расстояние - top за 1500 мс
@@ -68,10 +72,17 @@ $(document).ready(function() {
                 }
             })
         });
-
     }
 
-    accordion()
+    accordion();
+
+    //swiper
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: 5000,
+        speed: 1400,
+        autoplayDisableOnInteraction: true,
+        loop: true
+    });
 
 
 });
