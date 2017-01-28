@@ -2144,7 +2144,8 @@ $(document).ready(function() {
         autoplay: 5000,
         speed: 1400,
         autoplayDisableOnInteraction: true,
-        loop: true
+        loop: true,
+        slideActiveClass: 'text-animation'
     });
 
 

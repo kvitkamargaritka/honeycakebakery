@@ -8,14 +8,51 @@
     height: 700px
     background: top center no-repeat
     background-size: cover
-    background-image: url("../img/main-cake3.jpg")
+    background-image: url("../img/slide1.jpg")
   &_2
     height: 700px
     background: top center no-repeat
     background-size: cover
-    background-image: url("../img/0408.jpg")
+    background-image: url("../img/main-cake3.jpg")
   &_3
     height: 700px
     background: top center no-repeat
     background-size: cover
-    background-image: url("../img/1328.jpg")
+    background-image: url("../img/slide3.jpg")
+
+  &_4
+    height: 700px
+    background: top center no-repeat
+    background-size: cover
+    background-image: url("../img/slide4.jpg")
+
+.slide__description
+  position: absolute
+  width: 400px
+  font-size: 70px
+  color: #fff
+  font-weight: bold
+  text-transform: uppercase
+  transform: translate(0,0)
+  transition: all 1.3s ease-in-out
+  opacity: 0
+
+  &.is-top-right
+    top: 150px
+    left: 0
+
+  &.is-bottom-left
+    bottom: 200px
+    left: 50px
+
+  &.is-right-top
+    left: 700px
+    top: 200px
+
+
+.swiper-slide.text-animation
+  .slide__description
+    transition: all 1.3s ease-in-out
+    transform: translate(200px,50px)
+    opacity: 1
+
