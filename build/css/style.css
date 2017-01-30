@@ -461,7 +461,6 @@ img { max-width: 100%; }
  .section{ padding: 30px 0; }
  .mobile-pic{ height: 183px; }
  .section-prices .items__el{ margin: 20px 0; }
- .section-prices .items__el{ margin: 15px 0; }
  .section-prices .price__title{ font-size: 24px; }
  .section-prices .price__title:before{ left: -13px; }
  .section-prices .product{ margin: 0; }
@@ -482,8 +481,9 @@ img { max-width: 100%; }
 @media only screen and (max-width: 375px){
  .hamburger{ left: -65px; }
  .mobile-pic{ height: 170px; }
+ .section-prices .items__el{ margin: 15px 0; }
  .section-prices .price__title:before{ left: -7px; }
- .section-prices .price__title{ padding: 0 5px; font-size: 22px; }
+ .section-prices .price__title{ padding: 0 5px; font-size: 20px; }
  .section-packaging .boxs__list{ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
  .section-packaging .boxs__el:last-child{ display: none; } }
 
