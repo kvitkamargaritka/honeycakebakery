@@ -461,6 +461,7 @@ img { max-width: 100%; }
  .section{ padding: 30px 0; }
  .mobile-pic{ height: 183px; }
  .section-prices .items__el{ margin: 20px 0; }
+ .section-prices .price__title:before{ left: -10px; }
  .section-prices .product{ margin: 0; }
  .section-prices .product__subscribe{ font-size: 16px; }
  .drop-down{ padding: 15px 20px; }
