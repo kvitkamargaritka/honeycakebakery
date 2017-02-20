@@ -2120,33 +2120,40 @@ $(document).ready(function() {
           top = $(id).offset().top;
         margin = 100;
 
-        //анимируем переход на расстояние - top за 1500 мс
+        //анимируем переход на расстояние - top за 1000 мс
         $('body,html').animate({scrollTop: top - margin}, 1000);
 
     });
 
     // accordion
     function accordion () {
-        $('.items__el').each(function(index, el) {
-            $('.items__el').click(function () {
+        var items = $('.menu__el');
+
+        $(items).each(function(index, el) {
+            $(el).click(function () {
                 if (!$(this).toggleClass('is-active')) {
-                    $('.items__el').removeClass('is-active');
+                    $(el).removeClass('is-active');
                     $(this).addClass('is-active');
                 }
-            })
+            });
         });
     }
 
     accordion();
 
-    //swiper
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: 5000,
-        speed: 1400,
-        autoplayDisableOnInteraction: true,
-        loop: true,
-        slideActiveClass: 'text-animation'
-    });
+    //box
+    var $boxPagination = $('.slider__pagination');
 
+    $boxPagination.each(function(index, el){
+        $(el).on({
+            mouseover: function() {
+                $(el).next().addClass('is-visible');
+            },
+            mouseleave: function() {
+                $(el).next().removeClass('is-visible');
+            }
+        })
+
+    });
 
 });
