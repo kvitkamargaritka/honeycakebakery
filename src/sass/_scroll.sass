@@ -1,0 +1,32 @@
+.scroll
+  position: absolute
+  bottom: 3%
+  left: 50%
+  transform: translateX(-50%)
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  border: 1px solid rgba(255, 255, 255, .8)
+  display: none
+  +r(767)
+    display: block
+
+  &:after
+    position: absolute
+    top: 21px
+    left: 5px
+    content: ''
+    width: 17px
+    height: 1px
+    background-color: rgba(255, 255, 255, .8)
+    transform: rotate(45deg)
+
+  &:before
+    background-color: rgba(255, 255, 255, .8)
+    position: absolute
+    top: 21px
+    left: 16px
+    content: ''
+    width: 17px
+    height: 1px
+    transform: rotate(-45deg)

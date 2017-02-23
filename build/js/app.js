@@ -2118,12 +2118,36 @@ $(document).ready(function() {
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
-        margin = 100;
+          margin = 0;
 
         //анимируем переход на расстояние - top за 1000 мс
         $('body,html').animate({scrollTop: top - margin}, 1000);
 
     });
+
+    $(".nav-mob").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+        margin = 30;
+
+        //анимируем переход на расстояние - top за 1000 мс
+        $('body,html').animate({scrollTop: top - margin}, 1000);
+
+    });
+
+
+    $(".scroll").click(function (){
+        margin = 25;
+        $('body').animate({
+            scrollTop: $(".section-gallery").offset().top - margin
+        }, 2000);
+    });
+
 
     // accordion
     function accordion () {
@@ -2142,15 +2166,21 @@ $(document).ready(function() {
     accordion();
 
     //box
-    var $boxPagination = $('.slider__pagination');
+    var $sliderPagination = $('.slider__pagination'),
+        $sliderText = $('.slider__text');
 
-    $boxPagination.each(function(index, el){
+    $sliderPagination.each(function(index, el){
         $(el).on({
             mouseover: function() {
                 $(el).next().addClass('is-visible');
+                $(el).next().next().addClass('is-active');
+                //$('.slider__text span').addClass('is-active');
             },
             mouseleave: function() {
                 $(el).next().removeClass('is-visible');
+                $(el).next().next().removeClass('is-active');
+                //$('.slider__text span').removeClass('is-active');
+
             }
         })
 

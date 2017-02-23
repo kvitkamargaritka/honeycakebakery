@@ -31,12 +31,6 @@
       +r(767)
         margin: 20px 0
 
-      +r(415)
-        margin: 20px 0
-
-      +r(375)
-        margin: 15px 0
-
       +r(320)
         margin: 13px 0
 
@@ -55,31 +49,20 @@
       position: relative
       user-select: none
 
-      +r(415)
-        font-size: 24px
-
-      &:before
-        position: absolute
-        top: 8px
-        left: -20px
-        content: ''
-        width: 0
-        height: 0
-
-        +r(415)
-          left: -13px
-
-        +r(375)
-          left: -7px
-
-      +r(375)
-        padding: 0 5px
-        font-size: 20px
+      +r(767)
+        font-size: 23px
 
       +r(320)
         margin: 0 20px
+        font-size: 17px
     p
       font-size: 20px
+      +r(767)
+        font-size: 19px
+
+      &:first-child
+        +r(320)
+          font-size: 15px
 
   .product
     margin: 15px 0
