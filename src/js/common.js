@@ -103,24 +103,33 @@ $(document).ready(function() {
     accordion();
 
     //box
-    var $sliderPagination = $('.slider__pagination'),
-        $sliderText = $('.slider__text');
+    var $sliderPagination = $('.slider__pagination');
 
     $sliderPagination.each(function(index, el){
         $(el).on({
             mouseover: function() {
                 $(el).next().addClass('is-visible');
-                $(el).next().next().addClass('is-active');
-                //$('.slider__text span').addClass('is-active');
+                $(el).prev().addClass('is-active');
             },
             mouseleave: function() {
                 $(el).next().removeClass('is-visible');
-                $(el).next().next().removeClass('is-active');
-                //$('.slider__text span').removeClass('is-active');
+                $(el).prev().removeClass('is-active');
 
             }
         })
+    });
 
+    var $sliderText = $('.slider__text');
+
+    $sliderText.each(function(index, el) {
+       $(el).on({
+           mouseover: function() {
+               $(el).addClass('is-active');
+           },
+           mouseleave: function() {
+               $(el).removeClass('is-active');
+           }
+       })
     });
 
 });

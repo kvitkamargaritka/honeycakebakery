@@ -2,12 +2,15 @@
   position: relative
   width: 100%
   height: 100vh
+  text-align: center
 
   +r(767)
     display: none
 
   &__img
     position: absolute
+    top: 0
+    left: 0
     width: 100%
     height: 100%
     opacity: 0
@@ -16,11 +19,11 @@
     background-position: center
 
     &.is-first
-      background: url(../img/slide-5.jpg)
+      background: url(../img/slide-4.jpg)
       background-size: cover
 
     &.is-second
-      background: url(../img/slide-1.jpg)
+      background: url(../img/slide-5.jpg)
       background-size: cover
 
     &.is-third
@@ -28,7 +31,7 @@
       background-size: cover
 
     &.is-fourth
-      background: url(../img/slide-4.jpg)
+      background: url(../img/slide-1.jpg)
       background-size: cover
 
     &.is-main
@@ -42,6 +45,8 @@
 
   &__pagination
     position: absolute
+    top: 0
+    left: 0
     width: 25%
     height: 100vh
     z-index: 5
@@ -58,38 +63,23 @@
     &.is-four
       left: 75%
 
+  &__text-move
+    height: 90vh
+
   &__text
-    //width: 100%
-    width: 25%
+    position: relative
+    display: inline-block
+    margin: 0 20px
     text-align: center
-    position: absolute
-    bottom: 50px
     color: #fff
     font-size: 50px
-    z-index: 4
+    z-index: 10
     transition: all 1s ease-in-out
+    cursor: default
     +h200
 
     +r(1024)
       font-size: 35px
-
-    &.is-first
-      left: 0
-      padding-left: 13%
-      text-align: center
-
-    &.is-second
-      left: 25%
-      text-align: center
-
-    &.is-third
-      left: 50%
-      text-align: center
-
-    &.is-fourth
-      left: 75%
-      padding-right: 13%
-      text-align: center
 
     &.is-active
       color: $textDark
