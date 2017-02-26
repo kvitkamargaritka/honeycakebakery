@@ -2181,18 +2181,18 @@ $(document).ready(function() {
             }
         })
     });
-
-    var $sliderText = $('.slider__text');
-
-    $sliderText.each(function(index, el) {
-       $(el).on({
-           mouseover: function() {
-               $(el).addClass('is-active');
-           },
-           mouseleave: function() {
-               $(el).removeClass('is-active');
-           }
-       })
-    });
+    //
+    //var $sliderText = $('.slider__text');
+    //
+    //$sliderText.each(function(index, el) {
+    //   $(el).on({
+    //       mouseover: function() {
+    //           $(el).addClass('is-active');
+    //       },
+    //       mouseleave: function() {
+    //           $(el).removeClass('is-active');
+    //       }
+    //   })
+    //});
 
 });
