@@ -8,9 +8,9 @@ gulp.task('watch', [
     'copy:watch',
     'html:watch',
     'font:watch',
-    'js:watch'
+    'js:watch',
+    'base64:watch'
 ]);
-
 
 gulp.task('delete', function (cb) {
     rimraf('./'+config.dest.root, cb);
