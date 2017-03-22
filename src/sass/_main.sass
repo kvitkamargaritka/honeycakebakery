@@ -2,7 +2,8 @@
 $textBlue: #4DAEB5
 $textDark: #2d8c90
 $textGrey: #868484
-$bgBlue: #A4E2D5
+//$bgBlue: #A4E2D5
+$bgBlue: rgba(164, 226, 213, .7)
 
 +font("Five_minutes", five_minutes)
 +font("poiretone", poiretone)
@@ -61,7 +62,7 @@ img
 
   img
     width: 100%
-    transition: all 2s
+    transition: all 2s ease
     &:hover
       transform: scale(1.1, 1.1)
 
@@ -80,7 +81,6 @@ img
     +r(767)
       font-size: 30px
       margin-bottom: 20px
-
 
 .section-who, .section-services, .section-gallery, .section-who
   background-color: #fff
