@@ -45,6 +45,7 @@ $(document).ready(function() {
         $(this).hide();
     });
 
+
     // nav
     $(".nav").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
@@ -54,10 +55,10 @@ $(document).ready(function() {
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
-          margin = 0;
+        margin = 0;
 
         //анимируем переход на расстояние - top за 1000 мс
-        $('body,html').animate({scrollTop: top - margin}, 1000);
+        $('.wrap').animate({scrollTop: top - margin}, 1000);
 
     });
 
@@ -69,7 +70,7 @@ $(document).ready(function() {
 
         //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
-          margin = 0;
+        margin = 30;
 
         //анимируем переход на расстояние - top за 1000 мс
         $('body,html').animate({scrollTop: top - margin}, 1000);
@@ -117,18 +118,5 @@ $(document).ready(function() {
             }
         })
     });
-    //
-    //var $sliderText = $('.slider__text');
-    //
-    //$sliderText.each(function(index, el) {
-    //   $(el).on({
-    //       mouseover: function() {
-    //           $(el).addClass('is-active');
-    //       },
-    //       mouseleave: function() {
-    //           $(el).removeClass('is-active');
-    //       }
-    //   })
-    //});
 
 });
