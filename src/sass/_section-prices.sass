@@ -2,6 +2,7 @@
 
   .menu
     background: #fff
+    //border-radius: 20px
 
     +r(1024)
       margin-bottom: 0
@@ -12,6 +13,9 @@
       flex-wrap: wrap
       +r(1200)
         flex-wrap: wrap
+
+      +r(415)
+        padding: 30px 0
 
     &__el
       width: 100%
@@ -35,9 +39,9 @@
 
       //+r(767)
       //  margin: 20px 0
-      //
-      //+r(415)
-      //  margin: 13px 18px
+
+      +r(415)
+        margin: 13px 18px
 
   .price
     padding: 40px
@@ -49,10 +53,6 @@
 
     +r(667)
       text-align: center
-
-    +r(415)
-      padding: 30px 10px
-
     &:hover
       background-color: rgba(77, 174, 181, .07)
 
@@ -61,6 +61,7 @@
 
       .action
         background-color: rgba(77, 174, 181, .2)
+
 
     &__title
       font-size: 27px
@@ -111,14 +112,11 @@
     padding: 15px 0
     display: none
 
-    +r(667)
-      padding: 33px 0
+    +r(415)
+      padding: 10px 10px
 
-    //+r(415)
-    //  padding: 33px 10px
-
-    //+r(320)
-    //  padding: 0
+    +r(320)
+      padding: 0
 
   .action
     display: inline-block
@@ -135,8 +133,6 @@
     +r(667)
       top: 73px
       right: 50%
-    +r(415)
-      top: 85px
 
     &:before, &:after
       position: absolute
