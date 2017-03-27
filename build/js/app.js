@@ -2136,14 +2136,14 @@ $(document).ready(function() {
         margin = 30;
 
         //анимируем переход на расстояние - top за 1000 мс
-        $('body,html').animate({scrollTop: top - margin}, 1000);
+        $('.wrap').animate({scrollTop: top - margin}, 1000);
 
     });
 
 
     $(".scroll").click(function (){
         margin = 25;
-        $('body').animate({
+        $('.wrap').animate({
             scrollTop: $(".section-gallery").offset().top - margin
         }, 2000);
     });
@@ -2181,5 +2181,11 @@ $(document).ready(function() {
             }
         })
     });
+
+    //back-top
+    $('.back-top').click(function() {
+        $('.wrap').animate({scrollTop:0},800);
+    });
+
 
 });
