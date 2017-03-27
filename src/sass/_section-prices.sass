@@ -14,8 +14,8 @@
       +r(1200)
         flex-wrap: wrap
 
-      +r(415)
-        padding: 30px 0
+      //+r(415)
+      //  padding: 30px 0
 
     &__el
       width: 100%
@@ -40,8 +40,8 @@
       //+r(767)
       //  margin: 20px 0
 
-      +r(415)
-        margin: 13px 18px
+      //+r(415)
+      //  margin: 13px 18px
 
   .price
     padding: 40px
@@ -50,9 +50,15 @@
     cursor: pointer
     text-align: left
     transition: all .3s ease
+    +r(640)
+      padding: 40px 25px
+    +r(415)
+      padding: 40px 40px 40px 15px
+    +r(320)
+      padding: 40px 40px 40px 15px
 
-    +r(667)
-      text-align: center
+    //+r(667)
+    //  text-align: center
     &:hover
       background-color: rgba(77, 174, 181, .07)
 
@@ -130,9 +136,15 @@
     border: 1px solid #4DAEB5
     border-radius: 50%
     cursor: pointer
-    +r(667)
-      top: 73px
-      right: 50%
+    +r(640)
+      right: 25px
+    +r(415)
+      right: 15px
+    +r(320)
+      right: 15px
+    //+r(667)
+    //  top: 73px
+    //  right: 50%
 
     &:before, &:after
       position: absolute

@@ -446,11 +446,13 @@ img { max-width: 100%; }
  .fancybox-close{ top: -12px; right: -13px; width: 25px; height: 25px; } }
 
 @media only screen and (max-width: 667px){
- .section-prices .price{ text-align: center; }
- .section-prices .action{ top: 73px; right: 50%; }
  .section-contacts .contacts{ background-size: 200px; height: 255px; }
  .section-contacts .contacts__list{ margin-top: 40px; }
  .section-contacts .contacts__text{ font-size: 13px; } }
+
+@media only screen and (max-width: 640px){
+ .section-prices .price{ padding: 40px 25px; }
+ .section-prices .action{ right: 25px; } }
 
 @media only screen and (max-width: 568px){
  .section-services .item__img{ width: 45px; height: 45px; } }
@@ -459,11 +461,11 @@ img { max-width: 100%; }
  .section-services .item__img{ width: 40px; height: 40px; } }
 
 @media only screen and (max-width: 415px){
- .section-prices .menu__list{ padding: 30px 0; }
- .section-prices .menu__el{ margin: 13px 18px; }
+ .section-prices .price{ padding: 40px 40px 40px 15px; }
  .section-prices .product{ margin: 0; }
  .section-prices .product__subscribe{ font-size: 16px; }
  .section-prices .drop-down{ padding: 10px 10px; }
+ .section-prices .action{ right: 15px; }
  .section-services .services__el{ padding-bottom: 0; }
  .section-services .item__left{ display: none; }
  .section-services .item__right{ width: 72%; margin: 0; }
@@ -482,9 +484,11 @@ img { max-width: 100%; }
  .section-packaging .boxs__el:last-child{ display: none; } }
 
 @media only screen and (max-width: 320px){
+ .section-prices .price{ padding: 40px 40px 40px 15px; }
  .section-prices .price__title{ margin: 0 10px; font-size: 17px; }
  .section-prices .price p:first-child{ font-size: 15px; }
  .section-prices .drop-down{ padding: 0; }
+ .section-prices .action{ right: 15px; }
  .follow__list{ margin-bottom: 30px; } }
 
 
