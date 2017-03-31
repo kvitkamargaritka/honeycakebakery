@@ -10,6 +10,7 @@
       display: flex
       justify-content: center
       flex-wrap: wrap
+
       +r(1200)
         flex-wrap: wrap
 
@@ -66,13 +67,15 @@
         font-size: 23px
 
       +r(320)
-        margin: 0 10px
         font-size: 17px
     p
       font-size: 20px
 
       +r(767)
         font-size: 18px
+
+      +r(415)
+        font-size: 16px
 
       &:first-child
         +r(320)
@@ -89,6 +92,8 @@
 
     &__title
       font-size: 25px
+      +r(415)
+        font-size: 20px
 
     &__subscribe
       color: $textDark
@@ -128,8 +133,6 @@
     +r(640)
       right: 25px
     +r(500)
-      right: 15px
-    +r(320)
       right: 15px
 
     &:before, &:after
