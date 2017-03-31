@@ -1,23 +1,26 @@
 $(document).ready(function() {
     var $nav,
-      // buttons
-        $fancyBox = $('.img-gallery'),
-        $header = $('.header'),
+      // hamburger & mobile-menu
         $mobileMenu = $('.mobile-mnu'),
         $navIcon = $('#nav-icon'),
-        $sliderPagination = $('.slider__pagination'),
-        $backTop = $('.back-top'),
+      //accordion
         $menuEl = $('.menu__el'),
+      // buttons
+        $scroll = $('.scroll'),
+        $backTop = $('.back-top'),
         $showMoreOne = $('#show-more'),
         $showMoreTwo = $('#show-more2'),
         $showMoreThree = $('#show-more3'),
         $moreWorksOne = $('#more-works'),
         $moreWorksTwo = $('#more-works2'),
         $moreWorksThree = $('#more-works3'),
-        $sectionGallery = $('.section-gallery'),
-        $wrap = $('.wrap'),
-        $scroll = $('.scroll');
+      //slider & fancy-box
+        $sliderPagination = $('.slider__pagination'),
+        $fancyBox = $('.img-gallery'),
       // sections
+        $header = $('.header'),
+        $sectionGallery = $('.section-gallery'),
+        $wrap = $('.wrap');
 
     if ($(window).width() < 768) {
         $nav = $('#nav-mob');
@@ -65,7 +68,6 @@ $(document).ready(function() {
         $moreWorksThree.fadeIn();
         $(this).hide();
     });
-
 
     // nav
     $nav.on("click","a", function (event) {
